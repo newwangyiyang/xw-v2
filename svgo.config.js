@@ -1,0 +1,25 @@
+// svgo SVG 压缩，去除无用代码
+module.exports = {
+  plugins: [
+    'removeDoctype',
+    'removeXMLProcInst',
+    'removeComments',
+    'removeMetadata',
+    'removeEditorsNSData',
+    'cleanupAttrs',
+    'mergeStyles',
+    'inlineStyles',
+    'minifyStyles',
+    'removeUselessDefs',
+    'cleanupNumericValues',
+    'removeUnknownsAndDefaults',
+    'removeNonInheritableGroupAttrs',
+    'removeUselessStrokeAndFill',
+    'removeEmptyText',
+    'collapseGroups',
+    'removeEmptyAttrs',
+    'removeEmptyContainers',
+    'removeUnusedNS',
+    'removeDesc',
+  ],
+};

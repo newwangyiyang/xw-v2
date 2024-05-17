@@ -1,0 +1,22 @@
+html {
+  // 换算关系如下
+  // 1vw = 3.75px => 1px = 0.2666666667vw => 37.5px = 10vw
+  // 1rem = 37.5px = 10vw
+  font-size: 10vw;
+  body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 540px;
+    // 重置字体大小
+    font-size: 16px;
+  }
+}
+
+html {
+  @media screen and (max-width: 320px) {
+    font-size: 64px;
+  }
+  @media screen and (min-width: 540px) {
+    font-size: 108px;
+  }
+}
